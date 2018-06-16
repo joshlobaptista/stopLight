@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+}
+
+
+body {
+  background-color: maroon;
+}
+
+section {
+  border: 1px solid black;
+}
+
+
+i {
+  color: white;
+  display: block;
+  font-size: 100px;
+}
+
+.hidden{
+visibility: hidden;
+}
+
+.fas{
+  margin-left: 28%;
+  margin-bottom: 25%;
+  margin-top: 14%;
+}
+
+#redLight{
+  background-color: rgba(204,50,50,.8);
+  opacity: 1;
+}
+
+#yellowLight{
+  background-color: rgba(231,180,22,.8);
+
+}
+
+#greenLight{
+  background-color: rgba(45,201,55,.8);
+
+}
+
+#crossWalk > i {
+  opacity: 0.01;
+}
+
+#crossWalk{
+  float: left;
+  height: 130px;
+  width: 8%;
+  margin: auto;
+  margin-top: 12%;
+  background-color: black;
+  border-radius: 20%;
+}
+
+#frame{
+  height: 25%;
+  width: 10%;
+  margin: auto;
+  background-color: black;
+  border-radius: 15%;
+  float: left;
+  margin-left: 40%
+}
+
+#greenLight, #yellowLight, #redLight{
+  height: 120px;
+  width: 50%;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 4%;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px){
+
+i {
+  font-size: 50px;
+}
+
+#frame {
+  height: 39%;
+  width: 21%;
+
+}
+#crossWalk{
+  height: 25%;
+  width: 17%;
+  margin-top: 65%;
+}
+
+@media only screen and (max width: 353px ){
+  #frame {
+    margin-top: 30%;
+    height: 39%;
+    width: 26%;
+
+  }
+  #crossWalk{
+    height: 25%;
+    width: 19%;
+  }
+
+}
+
+
+/* Tablet */
+@media (min-width:769px) and (max-width: 1025px) {
+
+  #frame {
+    height: 30%;
+    width: 37%;
+  }
+  #crossWalk{
+    height: 25%;
+    width: 30%;
+  }
